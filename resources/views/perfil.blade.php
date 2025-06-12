@@ -6,13 +6,12 @@
         <!-- Banner superior -->
         <div class="perfil-banner">
             {{-- Muestra el banner del usuario si existe, sino usa el por defecto --}}
-            <img src="{{ $user->banner ? asset('storage/' . $user->banner) : asset('images/banner.jpg') }}" alt="Banner de perfil">
+            <img src="{{ $user->banner ? asset('storage/' . $user->banner) : asset('storage/avatars/12225881.png') }}" alt="Banner de perfil">
         </div>
 
-        <!-- Avatar (posicionado absolutamente sobre el banner y el info-card) -->
         <div class="avatar">
             {{-- Muestra el avatar del usuario si existe, sino usa el por defecto --}}
-            <img src="{{ $user->avatar ? asset('storage/' . $user->avatar) : asset('images/avatar.jpg') }}" alt="Avatar de {{ $user->name }}">
+            <img src="{{ $user->avatar ? asset('storage/' . $user->avatar) : asset('storage/avatars/12225881.png') }}" alt="Avatar de {{ $user->name }}">
         </div>
 
         <!-- Contenedor de info de usuario (la tarjeta blanca que se superpone) -->

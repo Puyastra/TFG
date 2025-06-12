@@ -17,7 +17,7 @@
         <div class="navbar-search">
             <form action="{{ route('search.results') }}" method="GET">
                 <input type="text" name="query" placeholder="Buscar historias o usuarios..." class="search-input" value="{{ request('query') }}">
-                <button type="submit" class="search-button">🔍</button>
+                <button type="submit" class="search-button">🔍Buscar</button>
             </form>
         </div>
 
