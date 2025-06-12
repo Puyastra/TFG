@@ -31,8 +31,6 @@
             <input type="password" name="password" id="password" required>
 
             <label>
-                <input type="checkbox" name="remember">
-                Recuérdame
             </label>
 
             <button type="submit">Entrar</button>

@@ -35,6 +35,9 @@
 
             <label for="password_confirmation">Confirmar contraseña</label>
             <input type="password" name="password_confirmation" id="password_confirmation" required>
+            
+            <label>
+            </label>
 
             <button type="submit">Registrarse</button>
         </form>
