@@ -49,7 +49,6 @@
             <label for="estado" class="block font-semibold">Estado</label>
             <select id="estado" name="estado" class="w-full border p-2 rounded" required>
                 <option value="publicada" {{ old('estado', $historia->estado) == 'publicada' ? 'selected' : '' }}>Publicada</option>
-                <option value="borrador" {{ old('estado', $historia->estado) == 'borrador' ? 'selected' : '' }}>Borrador</option>
             </select>
         </div>
 
