@@ -34,10 +34,14 @@
                     <button class="dropbtn">{{ Auth::user()->name }} ⌄</button>
                     <div class="dropdown-content">
                         <a href="{{ route('perfil') }}">Mi perfil</a>
-                        <form method="POST" action="{{ route('logout') }}">
+                        {{-- Formulario de Logout oculto, se activará con JavaScript --}}
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
-                            <button type="submit" class="logout-btn">Cerrar sesión</button>
                         </form>
+                        {{-- Botón visible que usa JavaScript para enviar el formulario --}}
+                        <button type="button" class="logout-btn" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            Cerrar sesión
+                        </button>
                     </div>
                 </div>
             @else
