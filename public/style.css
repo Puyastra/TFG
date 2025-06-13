@@ -1158,6 +1158,9 @@ body {
     width: 100%;
     max-width: 650px; 
     margin: 0 auto; 
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
 }
 
 .search-input {
@@ -1170,16 +1173,20 @@ body {
     color: #333;
 }
 
+input.search-input{
+    margin-top: 0;
+}
+
 .search-input:focus {
     border-color: #ff7f50;
 }
 
 .search-button {
     background-color: #ff7f50;
+    width: 20%;
     color: white;
-    border: none;
-    padding: 8px 15px; 
-    border-radius: 0 25px 25px 0; 
+    border: solid 1px;
+    border-radius:  7px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 1.1rem; 
@@ -1190,6 +1197,7 @@ body {
 
 .search-button:hover {
     background-color: #ff5c2b;
+    box-shadow: 5px 6px 5px 1px rgba(0,0,0,0.4);
 }
 
 /* Estilos para la página de resultados de búsqueda */
